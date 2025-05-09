@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ecom-frontend
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    env: node
+
+  - type: web
+    name: ecom-backend
+    rootDir: .
+    buildCommand: npm install
+    startCommand: npm start
+    env: node
