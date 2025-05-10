@@ -23,7 +23,7 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "https://ecom-p9ha.onrender.com",
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
